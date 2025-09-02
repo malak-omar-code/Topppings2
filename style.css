@@ -1,0 +1,82 @@
+
+
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: #f0d6c5;
+}
+
+h1 {
+  background: linear-gradient(90deg, #8e50b4, #db6bbf);
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 70%;
+  margin: 20px auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+p {
+  margin: 10px 0;
+  grid-template-columns: 300px 300px 300px;
+}
+
+.btn {
+  display: inline-blocks;
+  margin: 20px;
+  padding: 12px 25px;
+  background: linear-gradient(90deg, #b91f27, #db4f85);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #e08866, #6e400b);
+  transform: scale(1.1);
+}
+
+.car-container {
+  display: grid;
+  
+  justify-content: center;
+  margin: 40px auto;
+  width: 90%;
+}
+
+.car-card {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: rgb(255, 218, 200);
+  padding: 20px;
+  border-radius: 20px;
+  transition: 0.4s;
+  <margin:20px;
+}
+
+.car-card:nth-child(2n) {
+  background: linear-gradient(135deg, #36d1dc, #5b86e5);
+}
+
+.car-card:nth-child(3n) {
+  background: linear-gradient(135deg, #a80bb6, #a1122a);
+}
+
+.car-card:hover {
+  transform: translateY(-10px) scale(1.05);
+}
+
+.car-card img {
+  width: 150px;
+  height: 100px;
+  margin-top: 18px;
+  border-radius: 50%;
+
+  animation: rotate 4s linear infinite alternate;
+}
+
+@keyframes rotate {
+  from { transform: rotate(-10deg) scale(1); }
+  to { transform: rotate(10deg) scale(1.1); }
+}
